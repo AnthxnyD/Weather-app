@@ -1,0 +1,101 @@
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/montreal.jpg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  backdrop-filter: blur(2px);
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .top__content {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .top__city {
+      font-size: 2em;
+      margin: 0;
+      text-align: center;
+    }
+    .top__weather {
+      font-size: 5em;
+      margin: 0px;
+      text-align: center;
+    }
+  }
+  .bot__content {
+    height: 30%;
+    width: 100%;
+    background-color: rgba($color: #dfdfdf, $alpha: 0.8);
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .bot__days {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      .day__content {
+        margin: 0 10px;
+        background-color: rgba($color: #353535, $alpha: 0.6);
+        border-radius: 12.5px;
+        width: 50px;
+        height: 80px;
+        p {
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .bot__button {
+    position: absolute;
+    bottom: 20px;
+    right: 45%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  .modal {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    border-radius: 50px 50px 0 0;
+    background-color: #353535;
+    bottom: -350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    #inputSearch {
+      width: 60%;
+      height: 30px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      border: none;
+      background-color: white;
+      border-radius: 50px;
+      text-align: center;
+    }
+    #butSubmit {
+      width: 40%;
+      height: 30px;
+      border: none;
+      border-radius: 50px;
+    }
+  }
+}
