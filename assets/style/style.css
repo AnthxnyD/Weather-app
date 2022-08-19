@@ -1,0 +1,105 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/BackPicture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-backdrop-filter: blur(0.5px);
+          backdrop-filter: blur(0.5px);
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+main .top__content {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .top__content .top__city {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+main .top__content .top__weather {
+  font-size: 5em;
+  margin: 0px;
+  text-align: center;
+}
+main .bot__content {
+  height: 28.5%;
+  width: 100%;
+  background-color: rgba(113, 113, 113, 0.8);
+  border: solid 3px #2a2a2a;
+  border-radius: 70px 70px 70px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .bot__content .bot__days {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+main .bot__content .bot__days .day__content {
+  margin: 0 7px;
+  background-color: rgba(53, 53, 53, 0.6);
+  border: solid 2px #2a2a2a;
+  border-radius: 15px;
+  width: 50px;
+  height: 80px;
+}
+main .bot__content .bot__days .day__content:first-child {
+  display: none;
+}
+main .bot__content .bot__days .day__content p {
+  color: white;
+  text-align: center;
+}
+main .bot__button {
+  position: absolute;
+  bottom: 31px;
+  right: 28.5%;
+  border: solid 2px #2a2a2a;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+}
+main .modal {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  border-radius: 50px 50px 0 0;
+  background-color: #353535;
+  bottom: -350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+main .modal #inputSearch {
+  width: 60%;
+  height: 30px;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  border: none;
+  background-color: white;
+  border-radius: 50px;
+  text-align: center;
+}
+main .modal #butSubmit {
+  width: 40%;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+}/*# sourceMappingURL=style.css.map */

@@ -3,11 +3,11 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/montreal.jpg);
-  background-size: 120%;
+  background-image: url(../img/BackPicture.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(0.5px);
   overflow: hidden;
 }
 
@@ -37,10 +37,11 @@ main {
     }
   }
   .bot__content {
-    height: 30%;
+    height: 28.5%;
     width: 100%;
-    background-color: rgba($color: #dfdfdf, $alpha: 0.8);
-    border-radius: 50px 50px 0 0;
+    background-color: rgba($color: #717171, $alpha: 0.8);
+    border: solid 3px #2a2a2a;
+    border-radius: 70px 70px 70px 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,11 +50,15 @@ main {
       display: flex;
       flex-direction: row;
       .day__content {
-        margin: 0 10px;
+        margin: 0 7px;
         background-color: rgba($color: #353535, $alpha: 0.6);
-        border-radius: 12.5px;
+        border: solid 2px #2a2a2a;
+        border-radius: 15px;
         width: 50px;
         height: 80px;
+        &:first-child{
+            display: none;
+        }
         p {
           color: white;
           text-align: center;
@@ -63,12 +68,12 @@ main {
   }
   .bot__button {
     position: absolute;
-    bottom: 20px;
-    right: 45%;
-    border: none;
-    width: 50px;
+    bottom: 31px;
+    right: 28.5%;
+    border: solid 2px #2a2a2a;
+    width: 150px;
     height: 50px;
-    border-radius: 50px;
+    border-radius: 30px;
   }
   .modal {
     position: absolute;
@@ -84,12 +89,13 @@ main {
     #inputSearch {
       width: 60%;
       height: 30px;
-      margin-top: 25px;
-      margin-bottom: 25px;
+      margin-top: 45px;
+      margin-bottom: 35px;
       border: none;
       background-color: white;
       border-radius: 50px;
       text-align: center;
+      
     }
     #butSubmit {
       width: 40%;

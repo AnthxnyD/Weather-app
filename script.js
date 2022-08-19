@@ -103,9 +103,31 @@ butSubmit.addEventListener("click", (e) => {
       const currentCityTemp = data.main.temp;
 
       currentCity.textContent = currentCityName;
-      currentWeather.textContent = Math.round(currentCityTemp - 273.15) + "°";
+      currentWeather.textContent = Math.round(currentCityTemp - 273.15) + "°C";
     });
+
+    // Unsplash
+
+    const inputUnsplashLocation = `https://api.unsplash.com/search/photos?query=${inputCity}&client_id=hCdgy8UiwcLDCFyKl4gT3PCnFg9BzDLoSkxjOwcVASw`;
+    fetch(inputUnsplashLocation)
+    .then((response) =>{
+        console.log(response);
+        return response.json();
+        
+    })
+    .then((data) => {
+        const body = document.querySelector("body");
+        body.style.backgroundImage = `url(${data.results[0].urls.full})`;
+        console.log(data);
+   }) 
+
+
+
 });
+// access key : hCdgy8UiwcLDCFyKl4gT3PCnFg9BzDLoSkxjOwcVASw
+
+//ACCEDER A UNE IMAGE EN FONCTION D4UNE VILLE
+// https://api.unsplash.com/search/photos?query=Paris&client_id=hCdgy8UiwcLDCFyKl4gT3PCnFg9BzDLoSkxjOwcVASw
 
 // USER INPUT SEARCH CITY
 // let cities = [];
