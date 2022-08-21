@@ -47,6 +47,7 @@ const months = [
     'Dec'
 ]
 
+
 async function weatherCall(city) {
 
     const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${API_WEATHER}`);
