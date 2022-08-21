@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script defer type="module" src="./script.js"></script>
+</head>
+
+<body>
+    <div class="weather-app">
+        <h3>The weather</h3>
+        <div class="container" id="main">
+            <div id="previsions"></div>
+            <div class="botDays">
+                <h1 class="temp"> 16&#176c </h1>
+                <div class="city-time">
+                    <h1 class="name">Brussels</h1>
+                    <small>
+                        <span class="time">06:09</span>
+                        -
+                        <span class="date">Monday Sep 19</span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img src="/assets/Pics/Sun.svg" class="icon" alt="icon" width="50" height="50" />
+                    <span class="condition">Cloudy</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form action="javascript:void(0)">
+                <input type="text" class="search" id="search" placeholder="Search Location ..." />
+                <button title="GO" type="submit" class="submit" id="submit">
+                </button>
+            </form>
+            <ul class="cities">
+            </ul>
+            <ul class="details">
+                <h4>weather Details</h4>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloud"></span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="humidity"></span>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <span class="wind"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
