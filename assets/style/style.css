@@ -54,8 +54,18 @@ h1, h3 {
   align-items: center;
 }
 
+.card-date, .card-temp {
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
 .botDays {
   margin-top: auto;
+  margin-left: 8%;
+  margin-bottom: 3%;
 }
 
 .city-time, .temp, .weather {
@@ -66,6 +76,15 @@ h1, h3 {
   margin: 0;
   margin-bottom: 0.2em;
   font-size: 3em;
+}
+
+.h1, .temp {
+  font-size: 203;
+}
+
+#previsions {
+  margin-top: 8%;
+  margin-left: 8%;
 }
 
 .temp {
@@ -103,6 +122,11 @@ h1, h3 {
   position: absolute;
   top: 0;
   right: 0;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1.5em;
   margin: 0;
   border: none;
@@ -110,7 +134,7 @@ h1, h3 {
   background: #fa6b1b;
   color: #fff;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.5em;
   transition: 0.4s;
 }
 
@@ -186,9 +210,28 @@ h1, h3 {
   html {
     font-size: 12px;
   }
+  #previsions {
+    margin: 0px;
+  }
+  .botDays {
+    margin-top: auto;
+    margin-left: -5%;
+  }
 }
 @media screen and (max-width: 300px) {
   .weather-app {
-    min-height: 40em;
+    min-height: 50em;
+  }
+  #previsions {
+    margin-left: 55px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
   }
 }/*# sourceMappingURL=style.css.map */
