@@ -1,5 +1,5 @@
 # Weather App
-
+<img src="./assets/Pics/weatherapp.png">
 ## The Mission
 
 You have been sent abroad for a 10-month work mission. Your family and friends back home ask you about the weather where you live ALL. THE. TIME.
